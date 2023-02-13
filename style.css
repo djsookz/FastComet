@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app {
+  background-color: #e6e7e7;
+  width: 500px;
+  height: 600px;
+  padding: 45px;
+}
+.calculator {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 3px 5px 5px gray;
+}
+
+.calculator h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 500px;
+  padding: 50px 0;
+  border-radius: 8px;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  height: 40px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;
+}
+::-moz-placeholder {
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.circular_progress {
+  margin: 25px 0px;
+  position: relative;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-image: conic-gradient(#489fd7 0deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 2px 2px gray;
+}
+
+.circular_progress::before {
+  content: "";
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progress_value {
+  position: relative;
+}
+.btn-container {
+  position: absolute;
+  top: 65%;
+}
+
+.btn-container button {
+  background-color: #fcda04;
+  border: 1px solid #fcda04;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
