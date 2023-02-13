@@ -18,6 +18,13 @@ function results() {
       clearInterval(progress);
     }
 
+    if (values[0].value === "" || values[1].value === "") {
+      clearInterval(progress);
+      progressEndValue = null;
+      progressStartValue = 0;
+      alert("Please fill the inputs");
+    }
+
     if (progressEndValue === Infinity) {
       clearInterval(progress);
       alert("This is infinity");
@@ -32,7 +39,7 @@ function results() {
 
     if (value > 100 && value < 99999999) {
       clearInterval(progress);
-      alert(`This is more than 100%. To be exact is ${value}%`);
+      alert(`This is more than 100%. To be exact is ${Math.round(value)}%`);
       progressStartValue = 0;
     }
 
