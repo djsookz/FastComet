@@ -27,19 +27,19 @@ function results() {
 
     if (progressEndValue === Infinity) {
       clearInterval(progress);
-      alert("This is infinity");
+      alert("Result is infinity");
       progressStartValue = 0;
     }
 
     if (progressEndValue === 0) {
       clearInterval(progress);
-      alert("This is under 1%");
+      alert("Result is under 1%");
       progressStartValue = 0;
     }
 
     if (value > 100 && value < 99999999) {
       clearInterval(progress);
-      alert(`This is more than 100%. To be exact is ${Math.round(value)}%`);
+      alert(`Result is more than 100%. To be exact is ${Math.round(value)}%`);
       progressStartValue = 0;
     }
 

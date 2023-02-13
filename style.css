@@ -86,16 +86,17 @@ body {
 
 .progress_value {
   position: relative;
+  transform: translateY(-35px);
 }
 .btn-container {
   position: absolute;
-  top: 65%;
+  top: 57%;
 }
 
 .btn-container button {
   background-color: #fcda04;
   border: 1px solid #fcda04;
-  padding: 10px 50px;
+  padding: 10px 70px;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
