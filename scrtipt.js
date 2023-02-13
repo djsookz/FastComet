@@ -22,7 +22,7 @@ function results() {
       clearInterval(progress);
       progressEndValue = null;
       progressStartValue = 0;
-      alert("Please fill the inputs");
+      alert("Please fill both inputs");
     }
 
     if (progressEndValue === Infinity) {
