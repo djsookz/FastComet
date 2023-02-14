@@ -131,4 +131,11 @@ input::-webkit-inner-spin-button {
     width: 240px;
     height: 240px;
   }
+  .progress_value {
+    font-size: 0.75em;
+  }
+
+  .btn-container button {
+    padding: 7px 35px;
+  }
 }
