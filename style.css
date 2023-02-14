@@ -70,6 +70,11 @@ body {
   font-style: italic;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .circular_progress {
   margin: 25px 0px;
   position: relative;
