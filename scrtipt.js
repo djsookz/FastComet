@@ -11,13 +11,6 @@ function results() {
     speed = 25;
 
   let progress = setInterval(() => {
-    if (progressStartValue <= value) {
-      progressStartValue++;
-    } else {
-      alert("Please fill the inputs");
-      clearInterval(progress);
-    }
-
     if (values[0].value === "" || values[1].value === "") {
       clearInterval(progress);
       progressEndValue = null;
