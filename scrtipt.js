@@ -16,6 +16,8 @@ function results() {
       progressEndValue = null;
       progressStartValue = 0;
       alert("Please fill both inputs");
+    } else {
+      progressStartValue++;
     }
 
     if (progressEndValue === Infinity) {
