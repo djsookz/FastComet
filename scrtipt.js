@@ -28,7 +28,6 @@ function results() {
       clearInterval(progress);
       progressStartValue = 0;
       isNumber = true;
-      console.log(isNumber);
       isNotNumber.innerHTML = `<span class="remove">Please type numbers</span>`;
     } else {
       isNotNumber.innerHTML = `<span class="remove"></span>`;
